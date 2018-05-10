@@ -1,0 +1,18 @@
+.
+├── client
+│   ├── README.md
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   └── src
+├── node_modules
+│   ...
+├── package-lock.json
+├── package.json
+├── server.js
+├── structure.txt
+├── test.py
+└── yarn.lock
+
+246 directories, 9 files
