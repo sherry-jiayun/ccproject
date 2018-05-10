@@ -1,0 +1,310 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('./fonts/proximanova-regular-webfont.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'ProximaNova-Bold';
+  src: url('./fonts/proximanova-bold-webfont.ttf') format('truetype');
+}
+
+.header{
+  background: #FFFFFF;
+  margin-top: 0px; 
+  position: fixed; 
+  width: 100%;
+}
+.innerheader{
+  background: rgba(255,250,201, 0.4); 
+  height: 150px; 
+  width: 100%; 
+  z-index: 100;
+}
+.labelheader{
+  font-family: ProximaNova; 
+  font-size: 28px; 
+  color: #525252; 
+  margin-top: 121px;
+}
+.innerheader2{
+  text-align: center;
+  padding-top: 45px;
+}
+.imgheader{
+  height: 15px;
+}
+.divheader{
+  margin-top: 10px;
+}
+.rootElement{
+  position: absolute;
+  top: 220px; 
+  width: 100%;
+  transition: height 500ms 0ms, opacity 500ms 500ms;
+  z-index: -1;
+}
+.greetingEle{
+  width: 100%;
+  height: 220px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: -100;
+  transition-timing-function: linear;
+  transition: height 5000ms 0ms, opacity 5000ms 0ms;
+}
+.greetingEleHide{
+  transition: height 200ms 200ms, opacity 200ms 0ms;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  transition-timing-function: linear;
+  opacity: 0;
+  height: 0px;
+  z-index: -1;
+}
+.greetingEleHide input{
+  display: none;
+}
+.greetingInfo{
+  opacity: 0;
+  height: 220px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: ProximaNova;
+  z-index: -1;
+}
+.greetingInfoShow{
+  opacity: 1;
+  height: 220px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: ProximaNova;
+  z-index: -1;
+  transition-timing-function: linear;
+  transition: opacity 500ms 0ms;
+}
+.greetingInfoHide{
+  opacity: 0;
+  height: 0;
+  text-align: center;
+  font-family: ProximaNova;
+  z-index: -1;
+  padding-top: 0px;
+  transition-timing-function: linear;
+  transition: height 500ms, opacity 500ms, padding-top 500ms;
+}
+.greetingInfoHide span{
+  display: none;
+}
+.greetingInfoShow span{
+  opacity: 1;
+  height: 220px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: ProximaNova-Bold;
+  color: #FFAC38; 
+  z-index: -1;
+  transition-timing-function: linear;
+  transition: opacity 500ms 0ms;
+}
+.startbtn{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid;
+  background: rgba(0,0,1,0);
+  height: 25px;
+  border-radius: 10px;
+  width: 80px;
+  margin-top: 20px;
+}
+.nextbtn{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid;
+  background: rgba(0,0,1,0);
+  height: 25px;
+  border-radius: 10px;
+  width: 80px;
+  margin-top: 20px;
+}
+.submitbtn{
+  opacity: 0px;
+  height: 0px;
+  text-align: center;
+}
+.submitbtn input{
+  opacity: 0px;
+  height: 0px;
+  text-align: center;
+  display: none;
+}
+.submitbtnshow{
+  opacity: 1px;
+  height: 300px;
+  text-align: center;
+  transition-timing-function: linear;
+  transition: opacity 500ms, height 500ms;
+  z-index: 1000;
+}
+.submitbtnshow input{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid;
+  background: rgba(0,0,1,0);
+  border-radius: 10px;
+  z-index: 1000;
+  width: 80px;
+  height: 30px;
+  margin-top: 150px;
+}
+.questiondiv{
+  opacity: 0;
+  text-align: center;
+  height: 00px;
+}
+.questiondivshow{
+  opacity: 1;
+  text-align: center;
+  height: 300px;
+  z-index: 1;
+  transition-timing-function: linear;
+  transition: opacity 500ms, height 500ms,
+}
+.questiondivhide{
+  opacity: 0;
+  text-align: center;
+  height: 0px;
+  transition-timing-function: linear;
+  z-index: -1;
+  transition: opacity 500ms, height 500ms,
+}
+.questiondivhide input{
+  display: none;
+}
+.questionName{
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 40px;
+}
+.radioEle{
+  margin-top: 20px;
+  display: inline-block;
+  width: 100px;
+  font-family: ProximaNova;
+}
+.radioEle input{
+  margin-left: 10px;
+}
+
+.NameInput{
+  display: inline-block;
+  margin-top: 20px;
+  opacity: 1.0;
+  box-sizing: border-box;
+  transition: height 500ms 0ms;
+}
+.NameInput_hide{
+  transition: height 500ms 500ms;
+  opacity: 0.0;
+  height: 0px;
+}
+
+.NameInput input {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.NameInput input[type="button"]{
+  cursor: pointer;
+  outline: none;
+  border: 1px solid;
+  background: rgba(0,0,1,0);
+  height: 25px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.yesbox{
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 33px;
+  background-image: linear-gradient(-90deg, #10D967 1%, #00D08E 96%);
+  width: 100px;
+  height: 30px;
+  font-family: ProximaNova;
+  font-size: 18px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+.yesbox_check{
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 33px;
+  background-image: linear-gradient(-90deg, #10D967 1%, #00D08E 96%);
+  width: 100px;
+  height: 30px;
+  font-family: ProximaNova;
+  font-size: 18px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  padding-top: 4px;
+  border:1px solid #10D967;
+}
+.yesbox:hover{
+  border:2px solid #10D967;
+}
+.nobox{
+  cursor: pointer;
+  outline:  none;
+  display: inline-block;
+  border-radius: 33px;
+  background-image: linear-gradient(46deg, #FFAFAF 0%, #FF7777 100%);
+  width: 100px;
+  height: 30px;
+  font-family: ProximaNova;
+  font-size: 18px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+.nobox_check{
+  cursor: pointer;
+  display: none;
+  display: inline-block;
+  border-radius: 33px;
+  background-image: linear-gradient(46deg, #FFAFAF 0%, #FF7777 100%);
+  width: 100px;
+  height: 30px;
+  font-family: ProximaNova;
+  font-size: 18px;
+  color: #FFFFFF;
+  vertical-align: middle;
+  padding-top: 4px;
+  border:1px solid #FFAC38;
+}
+.nobox:hover{
+  border:1px solid #FFAC38;
+}
+.question{
+font-family: ProximaNova;
+font-size: 18px;
+color: #4E4E4E;
+padding-top: 100px;
+}
+.returnInfo{
+  margin-top: 20px;
+  font-family: PraximaNova;
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "example-create-react-app-express",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "python-shell": "^0.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
